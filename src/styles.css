@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: #303B44;
+}
+
+.container{
+	display: grid;
+	grid-template-areas: 
+  	"header header header"
+    "nav article ads"
+    "footer footer footer";
+  	grid-template-rows: 54px 1fr 60px;
+  	grid-template-columns: 8% 68% 24%;
+  	height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+@media all and (min-width: 0px){
+	.container{
+		grid-template-areas: 
+  		"header header header"
+  		"article article article"
+    	"ads ads ads";
+  		grid-template-rows: 54px 1fr 60px;
+  		grid-template-columns: 8% 68% 24%;
+	}
+
+	.ads{
+		margin: 0;
+	}
+
+	.ads-wrap{
+		margin: 0px 50px 0px 50px;
+		height: 350px;
+	}
+
+	.big-store{
+    	grid-template-columns: 1fr 1fr;
+	}
+
+	.article{
+		overflow: scroll;
+	}
+}
+
+
+@media all and (min-width: 850px){
+	.container{
+		grid-template-areas: 
+  		"header header header"
+  		"article article article"
+    	"ads ads ads";
+  		grid-template-rows: 54px 1fr 60px;
+  		grid-template-columns: 8% 68% 24%;
+	}
+
+	.ads{
+		position: relative;
+		bottom: 0;
+		margin: 0;
+	}
+
+	.ads-wrap{
+		margin: 0px 50px 0px 50px;
+		height: 350px;
+	}
+
+	.big-store{
+    	grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.article{
+		overflow: scroll;
+	}
+}
+
+@media all and (min-width: 1250px){
+	.container{
+		display: grid;
+		grid-template-areas: 
+	  	"header header header"
+  		"nav article ads"
+    	"footer footer footer";
+	  	grid-template-rows: 54px 1fr 60px;
+	  	grid-template-columns: 8% 68% 24%;
+		height: 100vh;
+	}
+	.ads{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.ads-wrap{
+		margin: 0px;
+		height: 350px;
+	}
+
+	.big-store{
+    	grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.article{
+		overflow: visible;
+	}
+}

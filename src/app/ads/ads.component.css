@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+
+.ads{
+	grid-area: ads;
+	min-height: 40vh;
+	background: #7E91A2;
+	display: block;
+	margin-left: 3em;
+}
+
+.ads-wrap{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.place{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 500px;
+	box-shadow: 0 8px 10px rgba(0,0,0,.15);
+	overflow: hidden;
+	background: #F0F0F0;
+	z-index: 0;
+}
+
+.form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	padding: 30px;
+}
+
+form{
+	position: relative;
+	width: 100%;
+	padding: 0 25px 0 25px;
+}
+
+form h2{
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.textinput{
+	position: relative;
+	widows: 100%;
+	margin-bottom: 10px;
+}
+
+.textinput input{
+	width: 100%;
+	border: 2px solid rgba(255,255,255,0.2);
+	padding: 5px 0px 5px 0px;
+	border-radius: 4px;
+	box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+	transition: 0.5s;
+}
+
+.textinput input[type="submit"]{
+	color: #fff;
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 700;
+	box-shadow: none;
+	letter-spacing: 3px;
+	font-size: 1.2em;
+	background: #8483A4;
+}
+
+.textinput input:hover{
+	border: 4px solid rgba(255,255,255,0.2);
+	box-shadow: inset 0 0 25px rgba(0,0,0,0.5);
+}
+
+.textinput input::placeholder{
+	color: #000;
+	opacity: 0.8;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 2px;
+}
+
+.textinput:hover input::placeholder{
+	color: #08001B;
+	font-weight: 1000;
+}
+
+.panel{
+	margin: 20px 10px 20px 0px;
+	display: grid;
+	grid-template-areas: 
+  	"name name name"
+    "age height weight"
+    "belok zir uglevody";
+  	grid-template-rows: 30px 30px 30px;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	height: 100%;
+  	width: 100%;
+  	grid-row-gap: 40px;
+  	grid-column-gap: 20px; 
+}
+
+
+
+.panel-name{
+	grid-area: name;
+}
+
+.panel-age{
+	grid-area: age;
+}
+
+.panel-height{
+	grid-area: height;
+}
+
+.panel-weight{
+	grid-area: weight;
+}
+
+.pan{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background: white;
+	align-items: center;
+	font-weight: 1000;
+	border: 2px solid rgba(255,255,255,0.2);
+	border-radius: 4px;
+	box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+}
+
+.panel label{
+	display: block;
+}
+
+.panel2{
+	margin: 20px 10px 20px 0px;
+	display: grid;
+	grid-template-areas: 
+    "belok zir ugly kal";
+  	grid-template-rows: 30px 30px;
+  	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	height: 100%;
+  	width: 100%;
+  	grid-row-gap: 40px;
+  	grid-column-gap: 20px;
+}
+
+.panel-kal{
+	grid-area: kal;
+}
+
+.panel-belok{
+	grid-area: belok;
+}
+
+.panel-zir{
+	grid-area: zir;
+}
+
+.panel-ugly{
+	grid-area: ugly;
+}
+
+.bad{
+	background: rgba(255,0,0,0.7);
+}
+
+.good{
+	background: rgba(0,255,0,0.7);
+}
+
+.usual{
+	background: rgba(255,255,255,0.7);
+}
+
+.h{
+	width: 100%;
+	font-size: 1.15em;
+	font-weight: 1000;
+	font-size: 1em;
+	padding: 10px 0px 10px 0px;
+}
+
+.shop{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.item{
+	display: grid;
+	grid-template-areas: 
+  	"food be zi ug ca cls";
+  	grid-template-rows: 1fr;
+  	grid-template-columns: 1fr 12% 12% 12% 12% 12%;
+	align-items: center;
+	vertical-align: center;
+	height: 3em;
+	width: 100%;
+	box-shadow: 0 8px 10px rgba(0,0,0,.15);
+}
+
+.close {
+	grid-area: cls;
+	position: relative;
+	right: 10px;
+	top: 0px;
+	width: 16px;
+	height: 16px;
+	opacity: 0.3;
+}
+.close:hover {
+	
+}
+.close:before, .close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 16px;
+	width: 2px;
+	background-color: red;
+}
+.close:before {
+	transform: rotate(45deg);
+}
+.close:after {
+	transform: rotate(-45deg);
+}
+
+.finished{
+	margin-top: 15px;
+}
+
+.tost{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	vertical-align: center;
+	justify-content: space-between;
+}
+
+.tt{
+	display: block;
+	width: 20%;
+}
+
+.panelboard{
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	vertical-align: center;
+	justify-content: space-around;
+	margin: 15px 10px 0px 10px;
+}
+
+.board{
+	width: 20%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.panbd{
+	margin: 10px;
+}
+
+.m{
+	margin-top: 30px; 
+}
+
+.item span{
+	font-weight: 400;
+	color: #F0F0F0;
+	position: relative;
+	bottom: 20px;
+	right: 16px;
+}
+
+.plus {
+	grid-area: cls;
+	position: relative;
+	right: 10px;
+	top: 0px;
+	width: 16px;
+	height: 16px;
+	opacity: 0.3;
+}
+.plus:hover {
+	
+}
+
+.plus:before, .plus:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 16px;
+	width: 2px;
+	background-color: red;
+}
+.plus:before {
+	transform: rotate(90deg);
+}
+.plus:after {
+	transform: rotate(0deg);
+}
